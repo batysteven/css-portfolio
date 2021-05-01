@@ -11,12 +11,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    z-index: 9000;
 }
 
 header h1 {
     font-weight: bold;
     font-size: 36px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
 }
 
 header a {
@@ -41,6 +43,27 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: burlywood;
+    color: rgb(98, 77, 49);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.about-me-border {
+    border-top: rgb(98, 77, 49);
+    border-bottom: rgb(98, 77, 49);
+    border-right: 0;
+    border-left: 0;
+    /* border-radius: 10px; */
+    border-style: solid;
+    padding: 10px;
+}
+
+.primary-color {
+    color: rgb(98, 77, 49);
 }
 
 .grid-container {
@@ -81,10 +104,13 @@ header nav ul li a {
     position: relative;
 }
 
-.bottom-right {
+.jumbo-text {
     position: absolute;
     bottom: 16px;
     right: 16px;
+    background-color: rgb(98, 77, 49);
+    color: burlywood;
+    padding: 10px;
 }
 
 .work-1 {
@@ -109,4 +135,8 @@ header nav ul li a {
 
 .work-6 {
     background-image: url(../images/work-6.png);
+}
+
+.work-title {
+    
 }
